@@ -1,0 +1,71 @@
+@media (max-width: 768px) {
+    .container {
+        margin-top: 55px;
+        padding: 30px 20px;
+        width: 350px;
+    }
+    .container__logo {
+        margin-bottom: 30px;
+    }
+    .container__logo svg {
+        width: 105px;
+        height: 25px;
+    }
+    .container__title {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 130%;
+    }
+    .form__field {
+        margin-bottom: 29px;
+        width: fit-content;
+        height: 33px;
+    }
+    .form__field:nth-child(4) {
+        margin-bottom: 33px;
+    }
+    .form__input {
+        width: 310px;
+        height: 33px;
+        font-size: 15px;
+        line-height: 140%
+    }
+    .form__field span {
+        left: 8px;
+        font-size: 15px;
+    }
+    .form__placeholder {
+        left: 20px;
+        font-size: 15px;
+        line-height: 140%;
+    }
+    .form__text {
+        margin-bottom: 29px;
+        padding-left: 8px;
+        font-size: 15px;
+        line-height: 140%
+    }
+    .form__button {
+        padding: 18px 28px;
+        width: 242px;
+        height: 55px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .arrow {
+        margin-left: 10px;
+    }
+    .container__links {
+        display: flex;
+        justify-content: space-between;
+        width: 223px;
+    }
+    .container__link {
+        font-size: 15px;
+        line-height: 140%;
+    }
+    .just-validate-error-label {
+        bottom: -20px;
+        font-size: 12px;
+     }
+}

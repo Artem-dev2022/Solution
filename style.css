@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('./fonts/Manrope-Semibold.woff2') format('woff2'), url('./fonts/Manrope-Semibold.woff') format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-Regular.woff2') format('woff2'), url('./fonts/Inter-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter-SemiBold.woff2') format('woff2'), url('./fonts/Inter-SemiBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    background-color: rgba(245, 252, 254, 1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 150px;
+    padding: 40px 50px;
+    width: 500px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 25px rgba(14, 76, 121, 0.18);
+    border-radius: 10px;
+}
+
+.container__logo {
+    margin-bottom: 39px;
+}
+
+.container__title {
+    margin-bottom: 48px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #2B689B;
+    letter-spacing: -0.03em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__field {
+    position: relative;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 36px;
+}
+
+.form__field:nth-child(4) {
+    margin-bottom: 30px;
+}
+
+.form__field span {
+    position: absolute;
+    top: 0;
+    left: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFB6C1;
+}
+
+.form__placeholder {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #6B95B9;
+    pointer-events: none;
+}
+
+.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form__input {
+    padding: 0 0 11px 24px;
+    width: 400px;
+    height: 36px;
+    border: none;
+    border-bottom: 1px solid rgba(43, 104, 155, 1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%
+}
+
+.eye {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.just-validate-error-label {
+    position: absolute;
+    bottom: -25px;
+    left: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: #F13F58 !important;
+ }
+
+.form__text {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: rgba(43, 104, 155, 1);
+}
+
+.form__text span {
+    color: #FFB6C1;
+}
+
+.form__button {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+    background: #FFD970;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #0E406A;
+    transition: all 0.2s ease-in;
+}
+
+.form__button:hover {
+    background-color: rgba(255, 226, 146, 1);
+}
+
+.arrow {
+    margin-left: 13px;
+}
+
+.container__links {
+    display: flex;
+    justify-content: space-between;
+    width: 244px;
+}
+
+.container__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #2B689B;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+/* 
+.container__link:first-child {
+    margin-right: 24px;
+} */
+
+.container__link:hover {
+    color: rgba(61, 127, 183, 1);
+}
